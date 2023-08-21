@@ -9,3 +9,8 @@ const {users} = require('../model')
 routes.get('/users', (req,res)=>{
     users.fetchUsers(req, res)
 })
+
+module.exports = {
+    express,
+    routes
+}
