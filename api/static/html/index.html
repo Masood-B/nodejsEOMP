@@ -8,8 +8,8 @@
     <title>Route Description</title>
 </head>
 <body>
-    <h1 class="display-1">Route Description</h1>
-    <div class="container-fluid">
+    <h1 class="display-1" style="text-decoration: underline;">Route Description</h1>
+    <div class="container">
         <h2>User Route</h2>
         <div class="row">
     <table class="table">
@@ -23,38 +23,33 @@
         <tbody>
           <tr>
             <td>GET</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td>/users</td>
+            <td>Get all the users</td>
           </tr>
           <tr>
             <td>GET</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>/user/:id</td>
+            <td>Get a single user</td>
           </tr>
           <tr>
             <td>POST</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>/user</td>
+            <td>register a user</td>
           </tr>
           <tr>
             <td>POST</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>/login</td>
+            <td>Clerify if the user is on the system</td>
           </tr>
           <tr>
-            <td>PUT</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td>PATCH</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>PATCH/PUT</td>
+            <td>/user/:id</td>
+            <td>Update the user's information</td>
           </tr>
           <tr>
             <td>DELETE</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>/user/:id</td>
+            <td>Remove the user from the system</td>
           </tr>
         </tbody>
       </table>
@@ -71,22 +66,32 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-        </tbody>
+            <tr>
+              <td>GET</td>
+              <td>/products</td>
+              <td>Get all the products</td>
+            </tr>
+            <tr>
+              <td>GET</td>
+              <td>/product/:id</td>
+              <td>Get a single product</td>
+            </tr>
+            <tr>
+              <td>POST</td>
+              <td>/product</td>
+              <td>register a product</td>
+            </tr>
+            <tr>
+              <td>PATCH/PUT</td>
+              <td>/product/:id</td>
+              <td>Update the product's information</td>
+            </tr>
+            <tr>
+              <td>DELETE</td>
+              <td>/product/:id</td>
+              <td>Remove the product from the system</td>
+            </tr>
+          </tbody>
       </table>
     </div>
     </div>
