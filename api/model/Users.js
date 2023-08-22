@@ -61,7 +61,7 @@ class Users{
                         }else{
                             res.json({
                                 stastus: res.statusCode,
-                                msg: "Invaild password or wrong email"
+                                msg: "Invaild password"
                             })
                         }
                     })
@@ -101,7 +101,7 @@ class Users{
         db.query(query, [data, req.params.id],
             (err)=>{
                 if (err) throw err
-                rs.json({
+                res.json({
                     status: res.statusCode,
                     msg: "The user recording has been updated"
                 })
