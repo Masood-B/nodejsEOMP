@@ -44,6 +44,14 @@ routes.get('/products', (req,res)=>{
     products.fetchProducts(req, res)
 })
 
+routes.get('/productAsc', (req, res)=>{
+    products.sortAscProducts(req, res)
+})
+
+routes.get('/productDESC', (req, res)=>{
+    products.sortDESCProducts(req, res)
+})
+
 routes.get('/product/:id', (req,res)=>{
     products.fetchProduct(req, res)
 })

@@ -70,6 +70,34 @@ class Products{
             })
         })
     }
+    sortAscProducts(req, res){
+        const query = `
+        SELECT prodID, prodName, quantity, amount, Category, prodUrl
+        FROM Products
+        ORDER BY amount ASC;
+        `
+        db.query(query, (err, results)=>{
+            if (err) throw err
+            res.json({
+                status: res.statusCode,
+                results
+            })
+        })
+    }
+    sortDESCProducts(req, res){
+        const query = `
+        SELECT prodID, prodName, quantity, amount, Category, prodUrl
+        FROM Products
+        ORDER BY amount DESC;
+        `
+        db.query(query, (err, results)=>{
+            if (err) throw err
+            res.json({
+                status: res.statusCode,
+                results
+            })
+        })
+    }
 }
 
 module.exports = Products
