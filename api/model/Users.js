@@ -35,7 +35,7 @@ class Users{
         const query = `
         SELECT userID, firstName, lastName, userAge, Gender, userRole, emailAdd, userPass, userProfile
         FROM Users
-        WHERE emailAdd = '${emailAdd}'
+        WHERE emailAdd = '${emailAdd}';
         `
         db.query(query, async(err, result)=>{
             if (err) throw err
@@ -110,7 +110,7 @@ class Users{
     deleteUser(req, res){
         const query = `
         DELETE FROM Users
-        WHERE userID = ${req.params.id}
+        WHERE userID = ${req.params.id};
         `
         db.query(query, (err)=>{
             if (err) throw err
