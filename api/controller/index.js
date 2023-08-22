@@ -14,7 +14,7 @@ routes.get('/user/:id', (req, res)=>{
     users.fetchUser(req, res)
 })
 
-routes.post('/register', bodyParser.json(),
+routes.post('/user', bodyParser.json(),
 (req, res)=>{
     users.register(req, res)
 })
@@ -48,7 +48,7 @@ routes.get('/product/:id', (req,res)=>{
     products.fetchProduct(req, res)
 })
 
-routes.post('/registerProduct', bodyParser.json(),
+routes.post('/product', bodyParser.json(),
 (req, res)=>{
     products.registerProduct(req, res)
 })
