@@ -17,7 +17,7 @@
               </div>
             <div class="row" style="margin-top: 3rem;">
       <div class="car col-12 col-sm-6 col-md-4 p-2" v-for="product in products" :key="product.prodID">
-                  <img :src="product.prodUrl" alt="" style="width:9rem;height:9rem;" loading="lazy">
+                  <img :src="product.prodUrl" alt="" style="width:10rem;height:10rem;" loading="lazy">
                   <div class="card-body">
                     <br>
                   <h5 class="card-title">{{ product.prodName }}</h5>
