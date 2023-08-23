@@ -54,8 +54,6 @@ h1{
 h5{
     font-family:'DM Serif Display', serif ;
 }
-.prodcont {
-}
 .car{
     border: 3px solid black;
     background-color: white;
