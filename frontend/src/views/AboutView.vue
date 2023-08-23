@@ -2,7 +2,7 @@
   
   <div class="about">
     <Navbar/>
-
+<br>
     <h1>More about HorrorHaven</h1>
     <br>
     <br>
@@ -37,7 +37,7 @@
             <h6>
             <br>
               Sinister Cinema: Dive into a vast library of horror movie reviews, rankings, and recommendations. From classic black-and-white nightmares to modern-day horrors, we've got it all covered. Discover hidden gems, revisit iconic monsters, and explore the evolution of fear on the silver screen.
-              
+              <br>
               Spine-Tingling Stories: Delve into the world of horror literature and short stories. We showcase the works of talented writers who craft tales that will haunt your dreams.
               
               Gore Galore: For those with a taste for the gruesome and grotesque, our gore section is a gorehound's paradise. Explore the history of special effects, makeup artistry, and the bloodiest scenes in horror history.

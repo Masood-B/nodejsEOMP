@@ -24,7 +24,6 @@
         </li>
 
         
-        <li><a href="" class="active"></a>Contact</li>
       </ul>
       <a href="" class="logo">HorrorHaven</a>
     </header>

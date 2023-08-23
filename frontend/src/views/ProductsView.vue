@@ -3,7 +3,10 @@
         <Navbar/>
 
         <div class="my-5 container" >
-            <h1><span style="color: black;">PRODUCTS</span></h1>
+            <h1 style="color: rgb(228, 220, 220);">Find Movies<span ></span></h1>
+            <br>
+            <br>
+
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" style="width: 10rem" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Filter Products
@@ -17,10 +20,10 @@
                     </div>
                   </div>
               </div>
-            <div class="row" style="margin-top: 3rem;">
-      <div class="car col-12 col-sm-6 col-md-4 p-2" v-for="product in products" :key="product.prodID">
-                  <img :src="product.prodUrl" alt="" style="width:10rem;height:10rem;" loading="lazy">
-                  <div class="card-body">
+            <div class="row" style="margin-top: 3rem; ">
+      <div class="car col-12 col-sm-6 col-md-4 p-2" v-for="product in products" :key="product.prodID" style="width: 17rem; ">
+                  <img :src="product.prodUrl" alt="" style="width:15rem;height:10rem;" loading="lazy">
+                  <div class="card-body" style="margin-right 13rem;">
                     <br>
                   <h5 class="card-title">{{ product.prodName }}</h5>
                    <h5 class="card-title">{{ product.Category }}</h5>
@@ -28,6 +31,7 @@
                   <p class="card-text">R {{ product.amount }}</p>
                   <p class="card-text">Qty: {{ product.quantity }}</p>
                   <a href="#" class="btn">View More</a>
+                  <router-link :to="{name:'singleProduct', params:{id: product.prodUrl}, query: }"><button ></button></router-link>
                 </div>
                  </div>
             </div>
@@ -66,6 +70,7 @@ h5{
 .car{
     border: 3px solid black;
     background-color: white;
+    justify-content: space-between;
 }
 .btn {
     color: white ;

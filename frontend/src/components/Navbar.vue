@@ -75,7 +75,7 @@
           </nav> -->
    
           <nav class="navbar navbar-expand-lg " >
-        <a class="navbar-brand" id="navpic" href="#"><img src="https://i.postimg.cc/jSDHxZyz/Screenshot-2023-08-22-121014.png" class="haven" alt=""></a>
+        <!-- <a href="" class="logo">HorrorHaven</a> -->
 
             <div class="container-fluid">
               <a class="navbar-brand" href="#" style="margin-right:30%;"><img src="" id="Lee"></a>
@@ -84,9 +84,9 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav" mx-auto p-2 >
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                     <router-link class="nav-link" to="/" style="color:white">Home</router-link>
-                  </li>
+                  </li> -->
                   <li class="nav-item">
                     <router-link class="nav-link" to="/home2" style="color:white">Home2</router-link>
                   </li>
@@ -109,6 +109,8 @@
                 </ul>
               </div>
             </div>
+            <a class="navbar-brand" id="navpic" href="#"><img src="https://i.postimg.cc/jSDHxZyz/Screenshot-2023-08-22-121014.png" class="haven" alt=""></a>
+
           </nav>
         </div> 
    
@@ -121,6 +123,33 @@
 </script>
 
 <style scoped>
+#header .logo {
+    color: red;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+  }
+
+  #header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #header ul li {
+    list-style: none;
+    margin-left: 20px;
+    font-size: 14px;
+  }
+  #header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: ghostwhite;
+    border-radius: 2px;
+  }
+  #header ul li a:hover {
+    background: linear-gradient(45deg, red, rgb(244));
+    color: rgb(253, 252, 252);
+  }
 /*nav{
  background-color: #000;
 }
