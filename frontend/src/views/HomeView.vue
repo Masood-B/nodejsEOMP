@@ -151,10 +151,10 @@
         <div class="carousel-item active" data-bs-interval="10000">
           <img src="https://i.postimg.cc/vTDtDVBK/pexels-andre-moura-3151392.jpg" class="d-block w-100" alt="">
           <div class="carousel-caption d-none d-md-block">
-            <h1 style="color:rgb(239, 8, 8)">First slide label</h1>
-            <h3>Some representative placeholder content for the first slide.</h3>
+            <h1 style="color:rgb(239, 8, 8)">Watch Horror Movies And TV Shows</h1>
+            <h3>Buy your favorite films at affordable prices</h3>
             <div class="slider-btn">
-              <button class="btn btn-1">watch</button>
+              <button class="btn btn-1">watch Now</button>
               <button class="btn btn-2"> Sign Up</button>
 
             </div>
@@ -163,15 +163,15 @@
         <div class="carousel-item" data-bs-interval="2000">
           <img src="https://i.postimg.cc/LsL9KC3C/pexels-jeshootscom-1040159.jpg" class="d-block w-100" alt="">
           <div class="carousel-caption d-none d-md-block">
-            <h1 style="color:rgb(239, 8, 8)">Second slide label</h1>
-            <h3>Some representative placeholder content for the second slide.</h3>
+            <h1 style="color:rgb(239, 8, 8)"></h1>
+            <h3>Buy your favorite films at affordable prices</h3>
           </div>
         </div>
         <div class="carousel-item">
           <img src="https://i.postimg.cc/LsL9KC3C/pexels-jeshootscom-1040159.jpg" class="d-block w-100" alt="">
           <div class="carousel-caption d-none d-md-block">
-            <h1 style="color:rgb(239, 8, 8)">Third slide label</h1>
-            <h3>Some representative placeholder content for the third slide.</h3>
+            <h1 style="color:rgb(239, 8, 8)">Watch Horror Movies And TV Shows</h1>
+            <h3>Buy your favorite films at affordable prices</h3>
           </div>
         </div>
       </div>
