@@ -1,15 +1,20 @@
 <template>
-    <div>
-
-    </div>
+  <div>
+    <Navbar />
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+  import Navbar from '@/components/Navbar.vue'
+
+  export default{
+   components:{
+     Navbar,
+    
+    //  HeaderComp
+   }
+  }
 </script>
 
 <style scoped>
-
 </style>

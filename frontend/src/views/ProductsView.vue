@@ -1,5 +1,7 @@
 <template>
     <div>
+        <Navbar/>
+
         <div class="my-5 container" >
             <h1><span style="color: black;">PRODUCTS</span></h1>
             <div class="dropdown">
@@ -25,7 +27,7 @@
                    <br>
                   <p class="card-text">R {{ product.amount }}</p>
                   <p class="card-text">Qty: {{ product.quantity }}</p>
-                  <a href="#" class="btn">Add to cart</a>
+                  <a href="#" class="btn">View More</a>
                 </div>
                  </div>
             </div>
@@ -33,6 +35,8 @@
         </div>
 </template>
 <script>
+  import Navbar from '@/components/Navbar.vue'
+
     export default {
         computed: {
             products(){
@@ -41,7 +45,12 @@
         },
         mounted() {
             this.$store.dispatch('fetchProducts')
-        }
+        },
+        components:{
+     Navbar,
+    
+    //  HeaderComp
+   }
     }
 </script>
 <style scoped>

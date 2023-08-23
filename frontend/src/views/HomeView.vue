@@ -139,6 +139,7 @@
 
 
 
+    <Navbar/>
 
 
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -230,6 +231,14 @@
 </template>
 
 <script>
+ import Navbar from '@/components/Navbar.vue'
+ export default{
+   components:{
+     Navbar,
+    
+    //  HeaderComp
+   }
+ }
 </script>
 <style>
 /*

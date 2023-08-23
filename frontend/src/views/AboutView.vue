@@ -1,5 +1,8 @@
 <template>
+  
   <div class="about">
+    <Navbar/>
+
     <h1>More about HorrorHaven</h1>
     <br>
     <br>
@@ -62,9 +65,14 @@
 </template>
 
 <script>
-  export default {
+  import Navbar from '@/components/Navbar.vue'
+ export default{
+   components:{
+     Navbar,
     
-  }
+    //  HeaderComp
+   }
+ }
 </script>
 
 <style scoped>

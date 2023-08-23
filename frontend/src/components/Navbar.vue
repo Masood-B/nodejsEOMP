@@ -88,15 +88,20 @@
                     <router-link class="nav-link" to="/" style="color:white">Home</router-link>
                   </li>
                   <li class="nav-item">
+                    <router-link class="nav-link" to="/home2" style="color:white">Home2</router-link>
+                  </li>
+                  <li class="nav-item">
                     <router-link class="nav-link" to="/about" style="color:white">About</router-link>
                   </li>
                   <li class="nav-item">
                     <router-link class="nav-link" to="/Products" style="color:white">Products</router-link>
                   </li>
                   <li class="nav-item">
-                    <router-link class="nav-link" to="/Admin" style="color:white">Admin</router-link>
+                    <router-link class="nav-link" to="/admin" style="color:white">Admin</router-link>
                   </li>
-                  
+                  <li class="nav-item">
+                    <router-link class="nav-link" to="/contact" style="color:white">Contact</router-link>
+                  </li>
                   <form class="d-flex" role="search">
                     <i class="bi bi-search" style="margin-top:0.5rem;color:white;"><span style="margin-left:1.3rem;color:white;">SEARCH</span></i>
                 </form>
