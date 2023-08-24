@@ -78,7 +78,7 @@
         <!-- <a href="" class="logo">HorrorHaven</a> -->
 
             <div class="container-fluid">
-              <a class="navbar-brand" href="#" style="margin-right:30%;"><img src="" id="Lee"></a>
+              <a class="navbar-brand" href="#" ><img src="" id="Lee"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -88,7 +88,7 @@
                     <router-link class="nav-link" to="/" style="color:white">Home</router-link>
                   </li> -->
                   <li class="nav-item">
-                    <router-link class="nav-link" to="/home2" style="color:white">Home2</router-link>
+                    <router-link class="nav-link" to="/home2" style="color:white">Home</router-link>
                   </li>
                   <li class="nav-item">
                     <router-link class="nav-link" to="/about" style="color:white">About</router-link>

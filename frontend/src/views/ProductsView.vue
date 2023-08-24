@@ -1,8 +1,28 @@
 <template>
     <div>
         <Navbar/>
+        <!-- <div class="container">
+            <h2 class="text-white">movies</h2>
+            <ul class="cards">
+              <li class="card" v-for="product in products" :key="product.prodID">
+                <div>
+                  <p class="text-white">{{ product.products }}</p>
+                  <img :src="product.prodUrl" class="w-100 test" alt="">
+                  <div class="card-content">
+                    <p class="text-white">{{ product.category }}</p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a href="" class="btn  btn-outline-light me-2">Buy Now</a>
+                  <router-link :to="{ name: 'singleProduct', params: {id: product.prodID}, query: {skateboard: product.products, img: product.prodUrl}}"><button class="btn  btn-outline-light ">View More</button></router-link>
+                </div>
+              </li>
+            </ul>
+          </div> -->
 
-        <div class="my-5 container" >
+       
+       
+          <div class="my-5 container" >
             <h1 style="color: rgb(228, 220, 220);">Find Movies<span ></span></h1>
             <br>
             <br>
@@ -22,16 +42,15 @@
               </div>
             <div class="row" style="margin-top: 3rem; ">
       <div class="car col-12 col-sm-6 col-md-4 p-2" v-for="product in products" :key="product.prodID" style="width: 17rem; ">
-                  <img :src="product.prodUrl" alt="" style="width:15rem;height:10rem;" loading="lazy">
-                  <div class="card-body" style="margin-right 13rem;">
+        <img :src="product.prodUrl" class="w-100 test" alt="">
+        <div class="card-body" style="margin-right 13rem;">
                     <br>
-                  <h5 class="card-title">{{ product.prodName }}</h5>
+                  <h5 class="card-title" style="color:white">{{ product.prodName }}</h5>
                    <h5 class="card-title">{{ product.Category }}</h5>
                    <br>
                   <p class="card-text">R {{ product.amount }}</p>
                   <p class="card-text">Qty: {{ product.quantity }}</p>
-                  <a href="#" class="btn">View More</a>
-                  <router-link :to="{name:'singleProduct', params:{id: product.prodUrl}, query:{product: product.prodUrl} }"><button >VIEW MORE</button></router-link>
+                  <router-link :to="{ name: 'singleProduct', params: {id: product.prodID}, query: {skateboard: product.products, img: product.prodUrl}}"><button class="btn  btn-outline-light ">View More</button></router-link>
                 </div>
                  </div>
             </div>
@@ -54,7 +73,16 @@
      Navbar,
     
     //  HeaderComp
-   }
+   },
+   methods:{
+      goToProduct(){
+        this.$router.push({
+          name: this.name,
+          params: this.params.id,
+          query: this.query.name
+        })
+      }
+    }
     }
 </script>
 <style scoped>
@@ -96,6 +124,38 @@ h5{
     padding: 14px 80px 18px 36px;
     cursor: pointer;
   }
+
+  .div {
+    padding: 4rem;
+    margin-inline: 1rem;
+    border-radius: 10px;
+    position: relative;
+    bottom: 5rem;
+  }
+  .custom-img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  .custom-img:hover {
+    object-fit: contain;
+  }
+  .side-text {
+    font-size: 7rem;
+    color: white;
+    transform: rotate(-90deg);
+    position: relative;
+    right: 40rem;
+    bottom: 5rem;
+    font-weight: 200;
+  }
+  .test {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  .card{
+    background-color: rgb(79, 79, 79);
+  }
+  
 </style>
 
 <!-- something need to change -->

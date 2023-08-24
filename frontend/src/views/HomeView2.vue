@@ -3,7 +3,7 @@
     <header id="header">
       <ul>
         <li>
-            <router-link class="nav-link" to="/home2" style="color:white">Home2</router-link>
+            <router-link class="nav-link" to="/home2" style="color:white">Home</router-link>
 
         </li>
         <li>
