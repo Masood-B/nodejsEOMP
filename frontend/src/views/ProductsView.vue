@@ -31,7 +31,7 @@
                   <p class="card-text">R {{ product.amount }}</p>
                   <p class="card-text">Qty: {{ product.quantity }}</p>
                   <a href="#" class="btn">View More</a>
-                  <router-link :to="{name:'singleProduct', params:{id: product.prodUrl}, query: }"><button ></button></router-link>
+                  <router-link :to="{name:'singleProduct', params:{id: product.prodUrl}, query:{product: product.prodUrl} }"><button >VIEW MORE</button></router-link>
                 </div>
                  </div>
             </div>
@@ -97,6 +97,8 @@ h5{
     cursor: pointer;
   }
 </style>
+
+<!-- something need to change -->
 
 
 
