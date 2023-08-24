@@ -2,11 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
+ 
   {
     path: '/about',
     name: 'about',
@@ -21,7 +17,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/ContactView.vue')
   },
   {
-    path: '/home2',
+    path: '/',
     name: 'home2',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -64,6 +60,7 @@ const routes = [
 
    path: '/singleProduct/:id',
    name: 'singleProduct',
+   prop: true,
    component: () => import("../views/SingleProduct.vue")
  }
   

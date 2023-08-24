@@ -1,104 +1,51 @@
 <template>
-    <footer class="bg-light text-center text-lg-start">
-        <!-- Grid container -->
-        <div class="container p-4">
-          <!--Grid row-->
-          <div class="row">
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-      
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="#!" class="text-dark">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-dark">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-dark">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-dark">Link 4</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-      
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase mb-0">Links</h5>
-      
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!" class="text-dark">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-dark">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-dark">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-dark">Link 4</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-      
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-      
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="#!" class="text-dark">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-dark">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-dark">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-dark">Link 4</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-      
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase mb-0">Links</h5>
-      
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!" class="text-dark">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-dark">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-dark">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-dark">Link 4</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <p class="text-white">© 2022</p>
           </div>
-          <!--Grid row-->
-        </div>
-        <!-- Grid container -->
       
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright:
-          <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->
-      </footer>
+          <div class="col mb-3">
+      
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Company</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Careers</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Our Culture</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Partners</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">The Horror haven blog</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>HorrorHaven</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Go Premium</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Giving</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Press Room</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Horror Haven Server</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Support</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Finding Help</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Support Library</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Community Forum</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Status</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Get in Touch</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
 </template>
 
 <script>

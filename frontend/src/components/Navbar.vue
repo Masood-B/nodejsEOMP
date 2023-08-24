@@ -83,12 +83,13 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <header id="header">
                 <ul class="navbar-nav" mx-auto p-2 >
                   <!-- <li class="nav-item">
                     <router-link class="nav-link" to="/" style="color:white">Home</router-link>
                   </li> -->
                   <li class="nav-item">
-                    <router-link class="nav-link" to="/home2" style="color:white">Home</router-link>
+                    <router-link class="nav-link" to="/" style="color:white">Home</router-link>
                   </li>
                   <li class="nav-item">
                     <router-link class="nav-link" to="/about" style="color:white">About</router-link>
@@ -107,6 +108,7 @@
                 </form>
                  
                 </ul>
+            </header>
               </div>
             </div>
             <a class="navbar-brand" id="navpic" href="#"><img src="https://i.postimg.cc/jSDHxZyz/Screenshot-2023-08-22-121014.png" class="haven" alt=""></a>

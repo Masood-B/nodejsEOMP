@@ -41,7 +41,7 @@
                   </div>
               </div>
             <div class="row" style="margin-top: 3rem; ">
-      <div class="car col-12 col-sm-6 col-md-4 p-2" v-for="product in products" :key="product.prodID" style="width: 17rem; ">
+      <div class="car col-12 col-sm-6 col-md-4 p-2" v-for="product in products" :key="product.prodID" style="width: 17rem;margin-inline:4rem; margin-bottom: 1rem; ">
         <img :src="product.prodUrl" class="w-100 test" alt="">
         <div class="card-body" style="margin-right 13rem;">
                     <br>
@@ -50,7 +50,18 @@
                    <br>
                   <p class="card-text">R {{ product.amount }}</p>
                   <p class="card-text">Qty: {{ product.quantity }}</p>
-                  <router-link :to="{ name: 'singleProduct', params: {id: product.prodID}, query: {skateboard: product.products, img: product.prodUrl}}"><button class="btn  btn-outline-light ">View More</button></router-link>
+                  <router-link :to=
+                  "{name: 'singleProduct',
+                   params: {id: product.prodID},
+                   query: {
+                    prodName: product.prodName,
+                     Category: product.Category,
+                    img: product.prodUrl,
+                    amount: product.amount,
+                    quantity: product.quantity
+                  }
+                  }"
+                  ><button class="btn  btn-outline-light ">View More</button></router-link>
                 </div>
                  </div>
             </div>
