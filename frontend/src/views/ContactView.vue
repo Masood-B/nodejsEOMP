@@ -48,18 +48,7 @@
                        
       
                     </div>
-                   
-                    <!-- <div class="row">
-                        <div class="col-md-12">
-                            <div class="md-form mb-0">
-                              <label for="subject" class="" id="s">Subject</label>
-                                <input type="text" id="subject" name="subject"    required
-                                oninvalid="this.setCustomValidity('Please Enter Your Name')"
-                                oninput="this.setCustomValidity('')" >
-                                
-                            </div>
-                        </div>
-                    </div> -->
+            
                   
                     <div class="row">
       
@@ -95,7 +84,7 @@
                       </li>
                       
                       <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                          <p>lithiniskhikhi9@gmail.com</p>
+                          <p>HorrorHaven@gmail.com</p>
                       </li>
                   </ul>
               </div>

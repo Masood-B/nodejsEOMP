@@ -10,7 +10,9 @@ export default createStore({
     spinner: false,
     token: null,
     msg: null,
-    addProduct:null
+    addProduct:null,
+    addUser:null
+
   },
   getters: {
   },
@@ -42,6 +44,13 @@ export default createStore({
     setDeleteUsers(state, data) {
       state.users = data
     },
+    setAddProduct(state,data){
+      state.addProduct = data
+    },
+    setAddUser(state,data){
+      state.addUser = data
+    }
+
 
   },
   actions: {
@@ -78,6 +87,21 @@ export default createStore({
         location.reload()
       }catch(e){
         context.commit("setMsg", "An error occurred")
+      }
+    },
+    async addProduct({ commit }, productData) {
+      const response = await axios.post(`${MoviesUrl}products`, productData)
+      location.reload()
+      commit('setAddProduct', response.data)
+    },
+    async addUser({ commit }, userData) {
+      try {
+        const response = await axios.post(`${MoviesUrl}users`, userData)
+        commit('setAddUser', response.data)
+        location.reload()
+        console.log('testing');
+      } catch (error) {
+        console.log(error);
       }
     }
   },

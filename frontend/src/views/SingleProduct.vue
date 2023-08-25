@@ -1,11 +1,10 @@
 <template>
   <div>
     <Navbar/>
-    <div class="row" style="margin-top: 3rem">
-      <div class="car col-12 col-sm-6 col-md-4 p-2">
+    <div class="row" style="margin-top: 3rem" >
+      <div class="car col-12 col-sm-6 col-md-4 p-2" >
         <img
-          :src="$route.query.img"
-          :alt="$route.query.img"
+          :src="$route.query.img" :alt="$route.query.img"
           style="width: 9rem; height: 9rem"
           loading="lazy"
         />
@@ -19,11 +18,15 @@
         </div>
       </div>
     </div>
+    <!-- <div class="else" v-else>
+        <Spinner/>
+      </div> -->
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/Navbar.vue'
+import Spinner from '@/components/Spinner.vue'
 
 
 export default {
@@ -39,7 +42,7 @@ export default {
   },
   components:{
      Navbar,
-    
+    Spinner
     //  HeaderComp
    }
 };

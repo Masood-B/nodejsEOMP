@@ -3,7 +3,7 @@
     <Navbar/>
     <br>
 <h2>Admin</h2>
-<button>add</button>
+<button class="addbtn"><AddProduct/> </button>
     <div class="table-responsive" style="margin-top: 1rem">
       <table class="table">
         <thead>
@@ -40,6 +40,8 @@
     </div>  
 
     <h2>User</h2>
+    <button class="addbtn"><AddUser/> </button>
+
     <div class="table-responsive" style="margin-top: 1rem" v-if="products">
         <table class="table">
           <thead>
@@ -51,7 +53,6 @@
               <th scope="col">Gender</th>
               <th scope="col">Role</th>
               <th scope="col">Email</th>
-              <th scope="col">Password</th>
               <th scope="col">Profile</th>
               <th scope="col">Edit</th>
               <th scope="col">Delete</th>
@@ -66,7 +67,6 @@
               <td>{{ user.Gender }}</td>
               <td>{{ user.userRole }}</td>
               <td>{{ user.emailAdd }}</td>
-              <td>{{ user.userPass }}</td>
               <td>
                 <img
                   :src="user.userProfile"
@@ -90,6 +90,8 @@
   <script>
   import Navbar from '@/components/Navbar.vue'
   import Spinner from '@/components/Spinner.vue'
+  import AddProduct from '@/components/AddProduct.vue'
+  import AddUser from '@/components/AddUser.vue'
 
 
 
@@ -109,7 +111,10 @@ export default {
   },
   components:{
      Navbar,
-     Spinner
+     Spinner,
+     AddProduct,
+     AddUser
+
     
     //  HeaderComp
    },
