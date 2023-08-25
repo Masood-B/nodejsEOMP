@@ -96,7 +96,7 @@ routes.get('/search/:id', (req, res)=>{
     products.searchProduct(req, res)
 })
 
-routes.post('/product', bodyParser.json(),
+routes.post('/users', bodyParser.json(),
 (req, res)=>{
     products.registerProduct(req, res)
 })
