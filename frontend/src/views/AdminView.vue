@@ -3,6 +3,7 @@
     <Navbar/>
     <br>
 <h2>Admin</h2>
+<button>add</button>
     <div class="table-responsive" style="margin-top: 1rem">
       <table class="table">
         <thead>
@@ -32,32 +33,93 @@
               />
             </td>
             <td><button>Edit</button></td>
-            <td><button>Delete</button></td>
+            <td><button class="btn" type="button" @click="deleteProduct(product.prodID)">Delete</button></td>
           </tr>
         </tbody>
       </table>
+    </div>  
+
+    <h2>User</h2>
+    <div class="table-responsive" style="margin-top: 1rem" v-if="products">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Surname</th>
+              <th scope="col">Age</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Role</th>
+              <th scope="col">Email</th>
+              <th scope="col">Password</th>
+              <th scope="col">Profile</th>
+              <th scope="col">Edit</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody v-for="user in users" :key="user.userID">
+            <tr>
+              <th scope="row">{{ user.userID }}</th>
+              <th>{{ user.firstName }}</th>
+              <td>{{ user.lastName }}</td>
+              <td>{{ user.userAge }}</td>
+              <td>{{ user.Gender }}</td>
+              <td>{{ user.userRole }}</td>
+              <td>{{ user.emailAdd }}</td>
+              <td>{{ user.userPass }}</td>
+              <td>
+                <img
+                  :src="user.userProfile"
+                  :alt="user.prodName"
+                  style="width: 5rem"
+                />
+              </td>
+              <td><button>Edit</button></td>
+              <td><button class="btn" type="button" @click="deleteUser(user.userID)">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>  
+      <div class="else" v-else>
+        <Spinner/>
+      </div>
+  
     </div>
-
-
-    
-  </div>
 </template>
   <script>
   import Navbar from '@/components/Navbar.vue'
+  import Spinner from '@/components/Spinner.vue'
+
+
+
 
 export default {
   computed: {
     products() {
       return this.$store.state.products;
     },
+    users(){
+        return this.$store.state.users;
+    }
   },
   mounted() {
     this.$store.dispatch("fetchProducts");
+    this.$store.dispatch("fetchUsers");
   },
   components:{
      Navbar,
+     Spinner
     
     //  HeaderComp
+   },
+   methods: {
+    deleteProduct(prodID) {
+        this.$store.dispatch('DeleteProducts', prodID)
+    },
+    deleteUser(userID) {
+        this.$store.dispatch('DeleteUsers', userID)
+    }
    }
 };
 </script>
