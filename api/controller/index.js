@@ -10,31 +10,31 @@ routes.get('/users', (req,res)=>{
     users.fetchUsers(req, res)
 })
 
-routes.get('/user/:id', (req, res)=>{
+routes.get('/users/:id', (req, res)=>{
     users.fetchUser(req, res)
 })
 
-routes.post('/user', bodyParser.json(),
+routes.post('/users', bodyParser.json(),
 (req, res)=>{
     users.register(req, res)
 })
 
-routes.post('/login', bodyParser.json(),
+routes.post('/users/', bodyParser.json(),
 (req, res)=>{
     users.login(req, res)
 })
 
-routes.put('/user/:id', bodyParser.json(),
+routes.put('/users/:id', bodyParser.json(),
 (req, res)=>{
     users.updateUser(req, res)
 })
 
-routes.patch('/user/:id', bodyParser.json(),
+routes.patch('/users/:id', bodyParser.json(),
 (req, res)=>{
     users.updateUser(req, res)
 })
 
-routes.delete('/user/:id', (req, res)=>{
+routes.delete('/users/:id', (req, res)=>{
     users.deleteUser(req, res)
 })
 
@@ -88,7 +88,7 @@ routes.get('/products/zombie', (req, res)=>{
     products.filterZombieProducts(req, res)
 })
 
-routes.get('/product/:id', (req,res)=>{
+routes.get('/products/:id', (req,res)=>{
     products.fetchProduct(req, res)
 })
 
@@ -96,17 +96,17 @@ routes.get('/search/:id', (req, res)=>{
     products.searchProduct(req, res)
 })
 
-routes.post('/users', bodyParser.json(),
+routes.post('/products', bodyParser.json(),
 (req, res)=>{
     products.registerProduct(req, res)
 })
 
-routes.put('/product/:id', bodyParser.json(),
+routes.put('/products/:id', bodyParser.json(),
 (req, res)=>{
     products.updateProduct(req, res)
 })
 
-routes.patch('/product/:id', bodyParser.json(),
+routes.patch('/products/:id', bodyParser.json(),
 (req, res)=>{
     products.updateProduct(req, res)
 })
