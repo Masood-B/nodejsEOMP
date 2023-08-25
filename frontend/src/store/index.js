@@ -9,7 +9,8 @@ export default createStore({
     product: null,
     spinner: false,
     token: null,
-    msg: null
+    msg: null,
+    addProduct:null
   },
   getters: {
   },
@@ -35,6 +36,13 @@ export default createStore({
     setMsg(state, msg) {
       state.msg = msg
     },
+    setDeleteProducts(state, data) {
+      state.products = data
+    },
+    setDeleteUsers(state, data) {
+      state.users = data
+    },
+
   },
   actions: {
     async fetchUsers(context) {
@@ -50,6 +58,24 @@ export default createStore({
         const {data} = await axios.get(`${MoviesUrl}products`)
         context.commit("setProducts", data.results)
         console.log(data.results);
+      }catch(e){
+        context.commit("setMsg", "An error occurred")
+      }
+    },
+    async DeleteProducts(context, prodID ) {
+      try{
+        const response = await axios.delete(`${MoviesUrl}product/${prodID}`)
+        context.commit("setDeleteProducts", response)
+        location.reload()
+      }catch(e){
+        context.commit("setMsg", "An error occurred")
+      }
+    },
+    async DeleteUsers(context, userID ) {
+      try{
+        const response = await axios.delete(`${MoviesUrl}users/${userID}`)
+        context.commit("setDeleteUsers", response)
+        location.reload()
       }catch(e){
         context.commit("setMsg", "An error occurred")
       }
