@@ -44,19 +44,19 @@ routes.get('/products', (req,res)=>{
     products.fetchProducts(req, res)
 })
 
-routes.get('/product_amount_asc', (req, res)=>{
+routes.get('/products/amount/asc', (req, res)=>{
     products.ascAmountProducts(req, res)
 })
 
-routes.get('/product_amount_desc', (req, res)=>{
+routes.get('/products/amount/desc', (req, res)=>{
     products.descAmountProducts(req, res)
 })
 
-routes.get('/product_name_asc', (req, res)=>{
+routes.get('/products/name/asc', (req, res)=>{
     products.ascNameProducts(req, res)
 })
 
-routes.get('/product_name_desc', (req, res)=>{
+routes.get('/products/name/desc', (req, res)=>{
     products.descNameProducts(req, res)
 })
 
@@ -92,7 +92,7 @@ routes.get('/products/:id', (req,res)=>{
     products.fetchProduct(req, res)
 })
 
-routes.get('/search/:id', (req, res)=>{
+routes.get('/products/name/:id', (req, res)=>{
     products.searchProduct(req, res)
 })
 

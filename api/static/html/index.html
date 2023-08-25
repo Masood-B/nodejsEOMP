@@ -28,27 +28,27 @@
           </tr>
           <tr>
             <td>GET</td>
-            <td>/user/:id</td>
+            <td>/users/:id</td>
             <td>Get a single user</td>
           </tr>
           <tr>
             <td>POST</td>
-            <td>/user</td>
+            <td>/users</td>
             <td>register a user</td>
           </tr>
           <tr>
             <td>POST</td>
-            <td>/login</td>
+            <td>/users/</td>
             <td>Clerify if the user is on the system</td>
           </tr>
           <tr>
             <td>PATCH/PUT</td>
-            <td>/user/:id</td>
+            <td>/users/:id</td>
             <td>Update the user's information</td>
           </tr>
           <tr>
             <td>DELETE</td>
-            <td>/user/:id</td>
+            <td>/users/:id</td>
             <td>Remove the user from the system</td>
           </tr>
         </tbody>
@@ -73,17 +73,82 @@
             </tr>
             <tr>
               <td>GET</td>
-              <td>/product/:id</td>
+              <td>/products/:id</td>
               <td>Get a single product</td>
             </tr>
             <tr>
+              <td>GET</td>
+              <td>products/name/:id</td>
+              <td>Get a product's name (Hint: Use Letters)</td>
+            </tr>
+            <tr>
+              <tr>
+              <td>GET</td>
+              <td>/products/amount/asc</td>
+              <td>Ascending order of the amount</td>
+            </tr>
+              <tr>
+              <td>GET</td>
+              <td>/products/amount/desc</td>
+              <td>Descending order of the amount</td>
+            </tr>
+            <tr>
+              <td>GET</td>
+              <td>/products/name/asc</td>
+              <td>Ascending order of names</td>
+            </tr>
+            <tr>
+              <td>GET</td>
+              <td>/products/name/desc</td>
+              <td>Descending order of names</td>
+            </tr>
+             <tr>
+            <td>GET</td>
+            <td>products/name/:id</td>
+            <td>Get a product's name (Hint: Use Letters)</td>
+          </tr>
+            <tr>
+              <td>GET</td>
+              <td>/products/thriller</td>
+              <td>Get thriller category of movies</td>
+            </tr>
+            <tr>
+              <td>GET</td>
+              <td>/products/drama</td>
+              <td>Get drama category of movies</td>
+            </tr>
+            <tr>
+              <td>GET</td>
+              <td>/products/comedy</td>
+              <td>Get comedy category of movies</td>
+            </tr>
+            <tr>
+              <td>GET</td>
+              <td>/products/fantasy</td>
+              <td>Get fantasy category of movies</td>
+            </tr>
+            <tr>
+              <td>GET</td>
+              <td>/products/musical</td>
+              <td>Get musical category of movies</td>
+            </tr>
+            <tr>
+              <td>GET</td>
+              <td>/products/mystery</td>
+              <td>Get mystery category of movies</td>
+            </tr>
+            <tr>
+              <td>GET</td>
+              <td>/products/zombie</td>
+              <td>Get zombie category of movies</td>
+            </tr>
               <td>POST</td>
-              <td>/product</td>
+              <td>/products</td>
               <td>register a product</td>
             </tr>
             <tr>
               <td>PATCH/PUT</td>
-              <td>/product/:id</td>
+              <td>/products/:id</td>
               <td>Update the product's information</td>
             </tr>
             <tr>
