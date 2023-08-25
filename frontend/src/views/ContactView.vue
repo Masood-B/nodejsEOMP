@@ -1,99 +1,35 @@
 <template>
-  <div>
+  <div class="body">
     <Navbar />
-    <section class="mb-4" style="margin-inline: 2rem;">
-
-        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Me !</h2>
-        <p class="text-center w-responsive mx-auto mb-5"></p>
-           
-      
-        <div class="row">
-      
-            <div class="col-md-9 mb-md-0 mb-5">
-                <form id="contact-form" name="contact-form" action="https://formspree.io/f/mwkdkkkw"
-                method="POST" >
-      
-                    <div class="row">
-      
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                              <label for="name" class="" id="">Your name</label>
-                              <input type="text" class="form-control w-100" id="email" style="p-4 w-75 text-center border-5 rounded-4 fs-5"
-                              placeholder="Please enter your name..."
-                              name="name"
-                              minlength="3"
-                              maxlength="20"
-                              required
-                              oninvalid="this.setCustomValidity('Please Enter Your Name')"
-                              oninput="this.setCustomValidity('')">
-                               
-                            </div>
-                        </div>
-                     
-      
-                       
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                              <label for="email" class="" id="email">Your email</label>
-                              <input type="text" class="form-control w-100" id="email" style="p-4 w-75 text-center border-5 rounded-4 fs-5"
-                              placeholder="Please enter your email..."
-                              name="name"
-                              minlength="3"
-                              maxlength="20"
-                              required
-                              oninvalid="this.setCustomValidity('Please Enter Your Name')"
-                              oninput="this.setCustomValidity('')">
-                            </div>
-                        </div>
-                       
-      
-                    </div>
-            
-                  
-                    <div class="row">
-      
-                        
-                        <div class="col-md-12">
-      
-                            <div class="md-form">
-                              <label for="message" id="message">Your message</label>
-                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" required></textarea>
-                              <br>
-                            </div>
-      
-                        </div>
-                    </div>
-                    
-                    <div class="text-center text-md-left">
-                      <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();" id="send" action="https://formspree.io/f/mwkdkkkw"
-                      method="POST" type="submit"><ion-icon name="mail-open-outline" ></ion-icon ></a>
-                  </div>
-                </form>
-      
-                <div class="status"></div>
-              </div>
-              
-              <div class="col-md-3 text-center">
-                  <ul class="list-unstyled mb-0">
-                      <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                          <p>Cape Town, Western cape, RSA</p>
-                      </li>
-                      
-                      <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                          <p>079 819 1831</p>
-                      </li>
-                      
-                      <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                          <p>HorrorHaven@gmail.com</p>
-                      </li>
-                  </ul>
-              </div>
-              
-              
-          </div>
-          
-      </section>
-      
+    <form action="https://formspree.io/f/meqbglnp" method="POST">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="p-4 w-75 text-center border-5 rounded-4 fs-5 border-radius:2px solid black;"
+          placeholder=""
+          name="emailAdd"
+          minlength="3"
+          maxlength="20"
+          required
+          oninvalid="this.setCustomValidity('Please enter your Email Address')"
+          oninput="this.setCustomValidity('')">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Username</label>
+          <input type="username" class="form-control" id="exampleInputUsername" style="p-4 w-75 text-center border-5 rounded-4 fs-5"
+          placeholder=""
+          name="name"
+          minlength="3"
+          maxlength="20"
+          required
+          oninvalid="this.setCustomValidity('Please enter your Username')"
+          oninput="this.setCustomValidity('')">
+        </div>
+        <div class="mb-3" style="p-4 w-75 text-center border-5 rounded-4 fs-5;">
+                 <textarea class="form-control w-100"  rows="9" id="message" placeholder="REASON OF INTEREST" name="message" value="" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Submit</button>
+      </form>
   </div>
 </template>
 
@@ -110,4 +46,9 @@
 </script>
 
 <style scoped>
+
+  form {
+    width: 70%;
+    margin-inline: 5rem;
+  }
 </style>

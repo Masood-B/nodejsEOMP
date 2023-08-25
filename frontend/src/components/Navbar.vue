@@ -74,7 +74,10 @@
             </div>
           </nav> -->
    
-          <nav class="navbar navbar-expand-lg " >
+          <nav class="navbar sticky-top navbar-expand-lg " >
+            <!-- <nav class="navbar sticky-top bg-body-tertiary" > -->
+
+
         <!-- <a href="" class="logo">HorrorHaven</a> -->
 
             <div class="container-fluid">
