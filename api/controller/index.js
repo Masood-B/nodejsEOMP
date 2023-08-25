@@ -19,7 +19,7 @@ routes.post('/users', bodyParser.json(),
     users.register(req, res)
 })
 
-routes.post('/users/', bodyParser.json(),
+routes.post('/user', bodyParser.json(),
 (req, res)=>{
     users.login(req, res)
 })
